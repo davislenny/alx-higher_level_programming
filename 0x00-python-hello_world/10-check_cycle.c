@@ -7,11 +7,9 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *forward, *backwards;
+	listint_t *forward = list, *backwards = list;
 
-	forward = list;
-	backwards = list;
-	while (forward->next && backwards)
+	while (forward && forward->next)
 	{
 		forward = forward->next->next;
 		backwards = backwards->next;
