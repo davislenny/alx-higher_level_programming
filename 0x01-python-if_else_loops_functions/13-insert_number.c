@@ -7,7 +7,7 @@
  * @number: n list element
  * Return: address of the new node
  */
-listint_t *insert_node(listint **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *new, *temp = *head;
 
