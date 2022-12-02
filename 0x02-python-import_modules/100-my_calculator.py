@@ -14,7 +14,7 @@ if __name__ == "__main__":
             print(f"{a} - {b} = {sub(a, b)}")
         elif op == "*":
             print(f"{a} * {b} = {mul(a, b)}")
-        elif op"/":
+        elif op == "/":
             print(f"{a} / {b} = {div(a, b)}")
 
         else:
