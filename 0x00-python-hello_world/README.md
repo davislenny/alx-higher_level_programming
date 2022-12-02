@@ -29,3 +29,18 @@ Middle word: olberto
  	       10 BINARY_ADD
 	       11 RETURN_VALUE
 ```
+
+### Environment
+* Language: python3 (version 3.8.5) and c
+* Compiler: python3 (and gcc 4.8.4)
+* Style guidelines: [PEP 8 ](https://peps.python.org/pep-0008/) [Betty style](https://github.com/holbertonschool/Betty/wiki)
+
+### Authors
+davislenny
+
+
+
+
+
+
+
