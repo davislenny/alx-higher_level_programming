@@ -7,7 +7,7 @@ if __name__ == "__main__":
     elif elements == 1:
         print("1 argument:")
     else:
-        print(f"{elements} arguments")
+        print(f"{elements} arguments:")
 
     for count in range(1, elements + 1):
         print(f"{count}: {sys.argv[count]}")
