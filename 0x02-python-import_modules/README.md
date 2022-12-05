@@ -36,5 +36,6 @@
 ![Python_Bytecode](https://user-images.githubusercontent.com/111700245/205687242-ece6181b-9b68-4fee-ae02-fd9284132c7d.PNG)
 * 103-fast_alphabet.py: prints the alphabet in uppercase
 
+---
 ### Authors
 davislenny [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/home)
