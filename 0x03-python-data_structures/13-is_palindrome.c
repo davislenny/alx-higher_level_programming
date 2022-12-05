@@ -33,12 +33,8 @@ int is_palindrome(listint_t **head)
 	for (n = 0; n < size / 2; n++)
 	{
 		if (array[n] != array[size - 1 - n])
-		{
-			free(array);
 			return (0);
-		}
 	}
-	free(array);
 	return (1);
 }
 
