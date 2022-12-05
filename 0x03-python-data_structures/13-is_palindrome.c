@@ -10,8 +10,8 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp = *head;
-	unsigned int size = 0;
-	int *array, n = 0;
+	unsigned int size = 0, n = 0;
+	int *array; 
 
 	if (!head)
 		return (0);
@@ -19,10 +19,14 @@ int is_palindrome(listint_t **head)
 		return (1);
 	while (temp)
 	{
-		array[n] = temp->n;
 		temp = temp->next;
 		size += 1;
-		n++;
+	}
+
+	while (temp)
+	{
+		array[n++] = temp->n;
+		temp = temp->next;
 	}
 
 	for (n = 0; n <= (size / 2); n++)
