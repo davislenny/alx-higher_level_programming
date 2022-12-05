@@ -16,7 +16,7 @@ Middle word: olberto
 ```
 * 8-concat_edges.py - Prints ```object-oriented programming with Python```
 * 9-easter_egg.py - Prints “The Zen of Python”, by TimPeters
-* 10-check_cycle.c - A function in C that checks if a singly linked list has a cycle in it
+* 10-check_cycle.c - A function in C that checks if a singly linked list has a cycle in it (Interviews)
 * lists.h - Contains the prototypes if the ```listint_t``` linked list
 * 100-write.py - A Python script that prints exactly ```and that piece of art is useful - Dora Korpar, 2015-10-19```
 * 101-compile - A script that compiles a Python script file stored in the environment variable ```$PYFILE```
