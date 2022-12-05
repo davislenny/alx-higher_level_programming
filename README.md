@@ -9,5 +9,6 @@
 * Format: [PEP 8](https://peps.python.org/pep-0008/) & [Betty](https://github.com/holbertonschool/Betty/wiki)
 * Compiler: python3 (and gcc -Wall -Werror - Wextra -pedantic -std=gnu89 flags)
 
+---
 ### Author
 davislenny
