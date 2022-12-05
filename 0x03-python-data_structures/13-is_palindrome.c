@@ -24,8 +24,6 @@ int is_palindrome(listint_t **head)
 	}
 	array = malloc(sizeof(int) * size);
 	temp = *head;
-	if (!array)
-		return (NULL);
 	while (temp)
 	{
 		array[n++] = temp->n;
