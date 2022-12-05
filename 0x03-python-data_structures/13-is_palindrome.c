@@ -11,7 +11,7 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp = *head;
-	int *array, size = 0, n = 0;
+	int array[10240], size = 0, n = 0;
 
 	if (head == NULL)
 		return (0);
@@ -24,10 +24,7 @@ int is_palindrome(listint_t **head)
 	}
 	if (size == 1)
 		return (1);
-	array = malloc(sizeof(int) * size);
 	temp = *head;
-	if (!array)
-		exit (EXIT_FAILURE);
 	while (temp)
 	{
 		array[n++] = temp->n;
