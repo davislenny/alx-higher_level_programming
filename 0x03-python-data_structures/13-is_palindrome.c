@@ -1,7 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * is_palindrome - checks if a singly linked list
@@ -11,26 +8,28 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *tmp = *head;
-	int nodes = 0, i = 0, *array = NULL;
+	listint_t *temp = *head;
+	int *array = NULL, size = 0, n = 0;
 
-	if (*head == NULL || head == NULL || (*head)->next == NULL)
+	if (!head)/* no linked list */
+		return (0);
+	if (!temp || !temp->next)/* empty list || single node is a palindrome */
 		return (1);
-	while (tmp)
+	while (temp)
 	{
-		nodes++;
-		tmp = tmp->next;
+		temp = temp->next;
+		size += 1;
 	}
-	array = malloc(sizeof(int) * nodes);
-	tmp = *head;
-	while (tmp)
+
+	array = malloc(sizeof(int) * size);
+	while (temp)
 	{
-		array[i++] = tmp->n;
-		tmp = tmp->next;
+		array[n++] = temp->n;
+		temp = temp->next;
 	}
-	for (i = 0; i < nodes / 2; i++)
+	for (n = 0; n < size / 2; n++)
 	{
-		if (array[i] != array[nodes - 1 - i])
+		if (array[n] != array[size - n - 1])
 		{
 			free(array);
 			return (0);
@@ -39,3 +38,4 @@ int is_palindrome(listint_t **head)
 	free(array);
 	return (1);
 }
+
