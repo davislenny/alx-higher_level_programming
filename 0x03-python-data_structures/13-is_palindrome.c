@@ -10,7 +10,7 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp = *head;
-	ssize_t size = 0;
+	unsigned int size = 0;
 	int *array, n = 0;
 
 	if (!head)
