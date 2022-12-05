@@ -29,5 +29,6 @@
 * 12-switch.py: A function that switches value of a and b
 * 13-is_palindrome.c: A function in ```C``` that checks if a singly linked list is a palindrome. #Interview
 
+---
 ### Authors
 davislenny [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/home)
