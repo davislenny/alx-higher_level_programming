@@ -107,6 +107,7 @@ Bes School
 * Compiler: python3 (and gcc usin the options ```-Wall -Werror -Wextra -pedantic -std=gnu89```)
 * Style guidelines: [PEP 8 ](https://peps.python.org/pep-0008/) & [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
+---
 ### Authors
 davislenny
 
