@@ -1,4 +1,4 @@
-## 0x01-python-if_else_loops_functions
+## Python-if_else_loops_functions
 
 ### Learning Objectives
 * How to use the ```if, if ... else``` statements
