@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    if not isinstance(roman_string, str) or roman_string is None:
+        return 0
 
     roman_dict = {
             "I": 1,
@@ -16,4 +18,4 @@ def roman_to_int(roman_string):
     roman_string = roman_string.replace("CD", "CCCC").replace("CM", "DCCCC")
     for char in roman_string:
         num += roman_dict[char]
-    print(num)
+    return num
