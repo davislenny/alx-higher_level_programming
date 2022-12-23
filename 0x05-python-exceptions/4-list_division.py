@@ -3,9 +3,8 @@ def list_division(my_list_1, my_list_2, list_length):
     new_list = []
     i = 0
     while i < list_length:
-        div = 0
         try:
-            div = my_list[i] / my_list_2[i]
+            div = my_list_1[i] / my_list_2[i]
         except (ValueError, TypeError):
             div = 0
             print("wrong type")
