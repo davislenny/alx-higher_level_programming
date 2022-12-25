@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-# Define a class name square
+"""
+0-square module
+Define a class named square
+"""
+
 class Square:
-# Initialize the calss a sempty
+    """Initialize the calss as empty"""
     pass
