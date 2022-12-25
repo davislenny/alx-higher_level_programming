@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Initiate class named Square"""
+"""Initiate a class named Square"""
 
 
 class Square:
@@ -10,11 +10,6 @@ class Square:
     """
 
     def __init__(self, size=0):
-        """
-        Initialize the square by its size
-        Raises Errors and prints err message
-        """
-
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
