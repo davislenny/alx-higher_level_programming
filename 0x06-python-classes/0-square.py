@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-class Square:# Initialize Square class
-    pass# Declare empty class
+# Define a class name square
+class Square:
+# Initialize the calss a sempty
+    pass
