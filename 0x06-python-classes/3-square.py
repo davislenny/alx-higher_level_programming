@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# square module
 """Initiate a class named Square"""
 
 
