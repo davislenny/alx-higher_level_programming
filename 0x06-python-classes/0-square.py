@@ -4,6 +4,7 @@
 Define a class named square
 """
 
+
 class Square:
     """Initialize the calss as empty"""
     pass
