@@ -32,7 +32,7 @@ class Square:
 
     def my_print(self):
         """prints the square with the character #"""
-        print("\n".join(["#" * self.__size for rows in range(self._-size)]))
+        print("\n".join(["#" * self.__size for rows in range(self.__size)]))
 
     @property
     def position(self):
