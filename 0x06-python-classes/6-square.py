@@ -41,6 +41,7 @@ class Square:
         """returns the position of the square"""
         return self.__position
 
+    @position.setter
     def position(self, value):
         if not isinstance(value, tuple) or \
         len([i for i in value if isinstance(i, int) and i >= 0]) != 2:
