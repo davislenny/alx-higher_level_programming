@@ -1,0 +1,47 @@
+# Run the test with python3 -m doctest -v ./tests/4-print_square.txt
+
+The ''print_square'' module
+===========================
+
+Using ''print_square'' function
+-------------------------------
+
+Import the function from the module:
+	>>> print_square = __import__('4-print_square').print_square
+
+Now use it to:
+
+Test for a normal int:
+	>>> print_square(0)
+	<BLANKLINE>
+	>>> print_square(1)
+	#
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+Test for a negative int:
+	>>> print_square(-5)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+Test for float:
+	>>> print_square(5.0)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Test for a non-integer:
+	>>> print_square("string")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Test for None:
+	>>> print_square(None)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
