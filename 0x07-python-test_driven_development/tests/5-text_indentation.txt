@@ -1,0 +1,39 @@
+# Run the test with python3 -m doctest -v ./tests/5-text_indentation.txt
+
+The ''5-text_indentation'' module
+=================================
+
+Using ''text_indentation''
+--------------------------
+
+Import the function from the module:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now use the function to:
+
+Test for a normal string with delims:
+	>>> text_indentation("""Lorem ipsum. Quonam modo? Non autem hoc:""")
+	Lorem ipsum.
+	<BLANKLINE>
+	Quonam modo?
+	<BLANKLINE>
+	Non autem hoc:
+	<BLANKLINE>
+
+Test for a non_string:
+	>>> text_indentation(12)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+Tets for None:
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+Test for empty argument in text:
+	>>> text_indentation()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
