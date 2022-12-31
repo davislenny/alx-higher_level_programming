@@ -7,42 +7,35 @@ Using ''add_integer''
 ---------------------
 
 Import the function from module:
-
 	>>> add_integer = __import__('0-add_integer').add_integer
 
 Now use it to:
 
 Test two positive integers:
-
 	>>> print(add_integer(4, 2))
 	6
 
 Test positive and negative integers:
-
 	>>> print(add_integer(10, -5))
 	5
 	>>> print(add_integer(-10, 5))
 	-5
 
 Test floats:
-
 	>>> print(add_integer(100.3, -2))
 	98
 
 Test one integer:
-
 	>>> print(add_integer(2))
 	100
 
 Test for non-integer arguments:
-
 	>>> print(add_integer(4, "School"))
 	Traceback (most recent call last):
 	...
 	TypeError: b must be an integer
 
 Test for invalid types:
-
 	>>> print(add_integer(None))
 	Traceback (most recent call last):
 	...
