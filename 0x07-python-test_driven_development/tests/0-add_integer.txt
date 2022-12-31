@@ -1,4 +1,4 @@
-# Run the test with python3 -m -doctest -v ./tests/0-add_integer.txt
+# Run the test with python3 -m doctest -v ./tests/0-add_integer.txt
 
 The ''0-add_integer'' module
 ============================
