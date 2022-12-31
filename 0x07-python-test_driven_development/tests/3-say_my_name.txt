@@ -1,0 +1,33 @@
+# Run the test with python3 -m doctest -v ./tests/3-say_my_name.txt
+
+The ''say_my_name'' module
+==========================
+
+Using ''say_my_name'' function
+------------------------------
+
+Import the function from the module it was defined:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it to:
+
+Test for string name:
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+Test for single name:
+	>>> say_my_name("Bob")
+	My name is Bob 
+	>>> say_my_name("", "Bob")
+	My name is  Bob
+
+Test for non-strings:
+	>>> say_my_name(12, "White")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+	>>> say_my_name("Bob", 9)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
