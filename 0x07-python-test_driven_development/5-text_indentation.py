@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The 'text_indentation module'
+The 'text_indentation' module
 """
 
 
