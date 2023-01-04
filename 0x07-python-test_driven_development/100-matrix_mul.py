@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 The 'matrix_mul' module
-Defines a function trhat multiplies 2 matrices
+Defines a function that multiplies 2 matrices
 """
 
 
