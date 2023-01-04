@@ -1,0 +1,59 @@
+# Run the test with python3 -m doctest -v ./tests/100-matrix_mul.txt
+
+The ''100-matrix_mul'' module
+=============================
+
+Using ''matrix_mul''
+--------------------
+
+First import the function fromthe module:
+	>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Now use it to:
+
+Test for 2 perfect matrices:
+	>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+	[[7, 10], [15, 22]]
+
+Test for Types:
+	>>> print(matrix_mul("string", [[1, 2]]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_a must be a list
+	>>> print(matrix_mul([[3, 4]], "string"))
+	Traceback (most recent call last):
+	...
+	TypeError: m_b must be a list
+
+	>>> print(matrix_mul([3, 5], [[1, 2]]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_a must be a list of lists
+	>>> print(matrix_mul([[1, 2]], [3, 5]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_b must be a list of lists
+
+	>>> print(matrix_mul([[1, 2, 3], [4, 5]], [[2, 5]]))
+	Traceback (most recent call last):
+	...
+	TypeError: each row of m_a must be of the same size
+	>>> print(matrix_mul([[1, 2, 3], [7, 4, 5]], [[2], [2, 3, 5]]))
+	Traceback (most recent call last):
+	...
+	TypeError: each row of m_b must be of the same size
+
+Test for Values:
+	>>> print(matrix_mul([[]], [[2, 3]]))
+	Traceback (most recent call last):
+	...
+	ValueError: m_a can't be empty
+	>>> print(matrix_mul([[2, 4]], [[]]))
+	Traceback (most recent call last):
+	...
+	ValueError: m_b can't be empty
+
+	>>> print(matrix_mul([[1, 2, 3]], [[3, 4]]))
+	Traceback (most recent call last):
+	...
+	ValueError: m_a and m_b can't be multiplied
