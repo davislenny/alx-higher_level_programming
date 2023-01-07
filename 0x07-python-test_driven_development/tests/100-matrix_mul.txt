@@ -25,10 +25,21 @@ Test for Types:
 	...
 	TypeError: m_b must be a list
 
+	>>> print(matrix_mul([["string"]], [[2, 4]]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_a should contain only integers or floats
+
+	>>> print(matrix_mul([[2, 5, 6]], [["string"]]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_b should contain only integers or floats
+
 	>>> print(matrix_mul([3, 5], [[1, 2]]))
 	Traceback (most recent call last):
 	...
 	TypeError: m_a must be a list of lists
+
 	>>> print(matrix_mul([[1, 2]], [3, 5]))
 	Traceback (most recent call last):
 	...
@@ -38,6 +49,7 @@ Test for Types:
 	Traceback (most recent call last):
 	...
 	TypeError: each row of m_a must be of the same size
+
 	>>> print(matrix_mul([[1, 2, 3], [7, 4, 5]], [[2], [2, 3, 5]]))
 	Traceback (most recent call last):
 	...
@@ -48,6 +60,7 @@ Test for Values:
 	Traceback (most recent call last):
 	...
 	ValueError: m_a can't be empty
+
 	>>> print(matrix_mul([[2, 4]], [[]]))
 	Traceback (most recent call last):
 	...
@@ -57,3 +70,14 @@ Test for Values:
 	Traceback (most recent call last):
 	...
 	ValueError: m_a and m_b can't be multiplied
+
+Test for missing arguments:
+	>>> print(matrix_mul([[2, 3, 4]]))
+	Traceback (most recent call last):
+	...
+	TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+	>>> print(matrix_mul())
+	Traceback (most recent call last):
+	...
+	TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
