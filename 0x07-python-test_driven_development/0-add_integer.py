@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This is the "addition" module
-This module contains the addition function that adds two 
+This module contains the addition function that adds two
 integers.
 """
 
