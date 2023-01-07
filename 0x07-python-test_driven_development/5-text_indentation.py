@@ -6,7 +6,7 @@ The 'text_indentation' module
 
 def text_indentation(text):
     """
-    This function prints 2 new lines every time 
+    This function prints 2 new lines every time
     it encounters the '.?:' strings in
     the text 'text'
     The funtion also raises:
@@ -19,4 +19,4 @@ def text_indentation(text):
         text = text.replace(chars, chars + '\n\n')
         for i in range(len(text)):
             text = text.replace('\n ', '\n')
-    print(text, end ="")
+    print(text, end="")
