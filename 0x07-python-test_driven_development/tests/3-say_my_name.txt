@@ -18,6 +18,7 @@ Test for string name:
 Test for single name:
 	>>> say_my_name("Bob")
 	My name is Bob 
+
 	>>> say_my_name("", "Bob")
 	My name is  Bob
 
@@ -26,8 +27,14 @@ Test for non-strings:
 	Traceback (most recent call last):
 	...
 	TypeError: first_name must be a string
+
 	>>> say_my_name("Bob", 9)
 	Traceback (most recent call last):
 	...
 	TypeError: last_name must be a string
 
+Test for missing 2 arguments:
+	>>> say_my_name()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
