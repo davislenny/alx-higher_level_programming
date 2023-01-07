@@ -13,7 +13,8 @@ class TestMaxinteger(unittest.TestCase):
         self.assertAlmostEqual(max_integer([3, 10, 7, 7]), 10)
         """Test for same ints in a list"""
         self.assertAlmostEqual(max_integer([9, 9, 9]), 9)
-
+        """Test for one element"""
+        self.assertAlmostEqual(max_integer([11]), 11)
         """Test for when list has negative ints"""
         self.assertAlmostEqual(max_integer([-2, -4, -6, -9]), -2)
         """Test for same negative ints"""
