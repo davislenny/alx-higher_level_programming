@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
 The matrix_divided module
-Contains the 'matrix_divided' function that 
+Contains the 'matrix_divided' function that
 divides all elements of matrix 'matrix' by 'div'
 """
 
 
 def matrix_divided(matrix, div):
     """
-    The function returns a new matrix with results 
+    The function returns a new matrix with results
     rounded to 2 decimal places
     Raise:
         TypeError if elements are not integers or float
