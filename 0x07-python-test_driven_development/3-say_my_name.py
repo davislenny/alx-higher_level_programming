@@ -18,4 +18,4 @@ def say_my_name(first_name, last_name=""):
     else:
         raise TypeError("{:s} must be a string".
                         format("first_name" if isinstance(last_name, str)
-                            else "last_name"))
+                                else "last_name"))
