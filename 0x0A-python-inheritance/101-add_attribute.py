@@ -5,11 +5,11 @@ Adds a new attribute to an object
 """
 
 
-def add_attr(obj, attr, value):
+def add_attribute(obj, name, value):
     """add an attribute is possible"""
-    if hasattr(obj, '__dict__') or (hasattr(obj, '__slots__') and
-            attr in obj.__slots__):
-        setattr(obj, attr, value)
+    if hasattr(obj, "__dict__") or
+        (hasattr(obj, "__slots__") and name in obj.__slots__):
+        setattr(obj, name, value)
 
     else:
         raise TypeError("can't add new attribute")
