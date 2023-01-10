@@ -1,0 +1,63 @@
+# Run the test with python3 -m doctest -v ./tests/7-base_geometry.txt
+
+The ''7-base_geometry'' module
+==============================
+
+Using class 'BaseGeometry'
+-------------------------
+
+First import the class:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Use it to:
+
+Test method instance:
+	>>> type(BaseGeometry.__dict__['area'])
+	<class 'function'>
+
+Test class Type:
+	>>> bg = BaseGeometry()
+	>>> type(bg) == BaseGeometry
+	True
+
+Test method call using class:
+	>>> bg.__class__.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
+
+	>>> bg.__class__.area()
+	Traceback (most recent call last):
+	TypeError: area() missing 1 required positional argument: 'self'
+
+Test method call with no arguments:
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test accepted int value:
+	>>> bg.integer_validator("string", 3)
+
+Test negative value
+	>>> bg.integer_validator("string" , -3)
+	Traceback (most recent call last):
+	ValueError: string must be greater than 0
+
+Test non integer value:
+	a string:
+	>>> bg.integer_validator("string", "string")
+	Traceback (most recent call last):
+	TypeError: string must be an integer
+
+	a boolean:
+	>>> bg.integer_validator("string", True)
+	Traceback (most recent call last):
+	TypeError: string must be an integer
+
+	a tuple:
+	>>> bg.integer_validator("string", (2, 5))
+	Traceback (most recent call last):
+	TypeError: string must be an integer
