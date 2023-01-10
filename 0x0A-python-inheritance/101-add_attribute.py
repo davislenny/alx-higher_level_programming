@@ -7,7 +7,8 @@ Adds a new attribute to an object
 
 def add_attr(obj, attr, value):
     """add an attribute is possible"""
-    if ('__dict__' in dir(obj)):
+    if hasattr(obj, '__dict__') or (hasattr(obj, '__slots__') and
+            attr in obj.__slots__):
         setattr(obj, attr, value)
 
     else:
