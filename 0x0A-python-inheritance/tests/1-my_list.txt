@@ -1,0 +1,31 @@
+# Run the test with python3 -m doctest -v ./tests/1-my_list.txt
+
+The ''1-my_list'' module
+========================
+
+Using 'MyList'
+-------------
+
+Import the class from the module:
+	>>> MyList = __import__('1-my_list').MyList
+
+Now use it to:
+
+Test for list instance:
+	>>> isinstance(MyList(), list)
+	True
+
+Test for a sorted list:
+	>>> ml = MyList([2, 4, 5, 9, 11])
+	>>> ml.print_sorted()
+	[2, 4, 5, 9, 11]
+
+Test for unsorted list:
+	>>> ml = MyList([11, 5, 9, 4, 2])
+	>>> ml.print_sorted()
+	[2, 4, 5, 9, 11]
+
+Test for an empty list:
+	>>> ml = MyList()
+	>>> ml.print_sorted()
+	[]
