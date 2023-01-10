@@ -9,4 +9,4 @@ and returns the number of characters added
 def append_write(filename="", text=""):
     """Function definition"""
     with open(filename, mode='a', encoding='utf-8') as fd:
-        return fd.append(text)
+        return fd.write(text)
