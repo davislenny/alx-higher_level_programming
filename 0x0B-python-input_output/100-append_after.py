@@ -8,7 +8,7 @@ each line containing a specific string
 
 def append_after(filename="", search_string="", new_string=""):
     """function definition"""
-    with open(filename, mode='r', encoding='utf-8') as fd:
+    with open(filename, mode='r+', encoding='utf-8') as fd:
         Text = ""
         for lines in fd:
             Text += lines
