@@ -11,6 +11,6 @@ def class_to_json(obj):
         :obj is an instance of a class
     """
     if ('__dict__' in dir(obj)):
-        return bj.__dict__.copy()
+        return obj.__dict__.copy()
     else:
         return {}
