@@ -17,4 +17,4 @@ class Student:
         """returns/retrieves a dictionary represenation of
         class student
         """
-        return student.__dict__
+        return Student.__dict__
