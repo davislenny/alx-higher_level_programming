@@ -41,10 +41,14 @@ Test method call with no arguments:
 Test accepted int value:
 	>>> bg.integer_validator("string", 3)
 
-Test negative value
+Test negative value and zero:
 	>>> bg.integer_validator("string" , -3)
 	Traceback (most recent call last):
 	ValueError: string must be greater than 0
+
+	>>> bg.integer_validator("Height", 0)
+	Traceback (most recent call last):
+	ValueError: Height must be greater than 0
 
 Test non integer value:
 	a string:
@@ -61,3 +65,18 @@ Test non integer value:
 	>>> bg.integer_validator("string", (2, 5))
 	Traceback (most recent call last):
 	TypeError: string must be an integer
+
+	a list:
+	>>> bg.integer_validator("Hours", [5])
+	Traceback (most recent call last):
+	TypeError: Hours must be an integer
+
+	a dictionary:
+	>>> bg.integer_validator("Age", {3, 5, 1})
+	Traceback (most recent call last):
+	TypeError: Age must be an integer
+
+	a None:
+	>>> bg.integer_validator("Length", None)
+	Traceback (most recent call last):
+	TypeError: Length must be an integer
