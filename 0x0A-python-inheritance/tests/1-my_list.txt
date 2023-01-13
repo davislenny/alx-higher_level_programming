@@ -29,3 +29,24 @@ Test for an empty list:
 	>>> ml = MyList()
 	>>> ml.print_sorted()
 	[]
+
+Test with append:
+	>>> ml = MyList()
+	>>> ml.append(5)
+	>>> ml.append(9)
+	>>> ml.append(11)
+	>>> ml.append(3)
+	>>> ml.append(7)
+	>>> ml.print_sorted()
+	[3, 5, 7, 9, 11]
+
+Test append negatives:
+	>>> ml = MyList()
+	>>> ml.append(-5)
+	>>> ml.append(-9)
+	>>> ml.append(-11)
+	>>> ml.append(-3)
+	>>> ml.append(-7)
+	>>> ml.append(1)
+	>>> ml.print_sorted()
+	[-11, -9, -7, -5, -3, 1]
