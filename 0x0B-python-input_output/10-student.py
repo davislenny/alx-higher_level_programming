@@ -17,7 +17,7 @@ class Student:
         """returns/retrieves a dictionary represenation of
         class student
         """
-        if attrs == None:
+        if attrs is None:
             return self.__dict__.copy()
         else:
             j_dict = {}
