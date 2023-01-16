@@ -70,16 +70,16 @@ class Rectangle(Base):
         """" Returns rectangle area """
         return self.width * self.height
 
-
     def display(self):
-        """ Prints the rectangle
+        """
+        Prints the rectangle
         print('\n'.join(['#' * self.width for rows in range(self.height)]))
         """
         if self.width == 0 or self.height == 0:
             print('')
             return
         [print("") for i in range(self.y)]
-        for i in range (self.height):
+        for i in range(self.height):
             [print(' ', end='') for j in range(self.x)]
             [print('#', end='') for k in range(self.width)]
             print('')
@@ -87,14 +87,14 @@ class Rectangle(Base):
     def __str__(self):
         """ returs string rep of the rectangle """
         return ("[Rectangle] " + '(' + str(self.id) + ')' + ' ' +
-                str(self.x) + '/' + str(self.y) + ' - ' + str(self.width) +
-                    '/' + str(self.height))
+                str(self.x) + '/' + str(self.y) + ' - ' + str(self.width)
+                + '/' + str(self.height))
 
     def set(self, id=None, width=None, height=None, x=None, y=None):
         """ Sets an argument to each attribute """
         if id is not None:
             self.id = id
-        if  width is not None:
+        if width is not None:
             self.width = width
         if height is not None:
             self.height = height
