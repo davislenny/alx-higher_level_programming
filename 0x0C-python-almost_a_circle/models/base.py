@@ -9,6 +9,7 @@ import json
 class Base:
     """class definition"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Constructor"""
         if id is not None:
@@ -30,8 +31,8 @@ class Base:
         """ Writes the JSON string representation of list_objs to a file """
         if list_objs is not None:
             list_objs = [obj.to_dictionary() for obj in list_objs]
-        with open("{}.json".format(cls.__name__), mode='w', encoding='utf-8') as fd:
-           fd.write(cls.to_json_string(list_objs))
+        with open("{}.json".format(cls.__name__), 'w', encoding='utf-8') as fd:
+            fd.write(cls.to_json_string(list_objs))
 
     @staticmethod
     def from_json_string(json_string):
@@ -61,6 +62,6 @@ class Base:
                 dictionary = cls.from_json_string(fd.read())
             for i, line in enumerate(dictionary):
                 List.append(cls.create(**dictionary[i]))
-        except:
+        except Exception:
             pass
         return List
