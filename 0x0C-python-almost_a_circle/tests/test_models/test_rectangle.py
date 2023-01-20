@@ -30,7 +30,7 @@ class TestRectangle(unittest.TestCase):
         r2 = Rectangle(10, 2)
         self.assertTrue(r2.id is not None)
         r3 = Rectangle(2, 10)
-        self.assertTrue(r3.id is not None )
+        self.assertTrue(r3.id is not None)
 
     def test_types(self):
         """ Non-integer attributes """
