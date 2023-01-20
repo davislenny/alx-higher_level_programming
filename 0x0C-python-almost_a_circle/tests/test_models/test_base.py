@@ -7,7 +7,7 @@ or python3 -m unittest discover tests
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
-
+import os
 # Rectangle = __import__('rectangle').Rectangle
 import json
 # Square = __import('square').Square
@@ -23,7 +23,7 @@ class TestBase(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove("Rectangle.json")
-        except:
+        except Exception:
             pass
 
     def test_class_type(self):
@@ -77,7 +77,7 @@ class TestBase(unittest.TestCase):
         r1 = Rectangle(10, 7, 2, 8)
         Rectangle.save_to_file([r1])
         with open("Rectangle.json", "r") as file:
-             self.assertEqual(json.dumps([r1.to_dictionary()]), file.read())
+            self.assertEqual(json.dumps([r1.to_dictionary()]), file.read())
 
         """ When list is None """
         r2 = None
@@ -100,7 +100,7 @@ class TestBase(unittest.TestCase):
         self.assertTrue(str1 == [])
 
         """ When json_string is empty """
-        L2 = "" 
+        L2 = ""
         str2 = Base.from_json_string(L2)
         self.assertTrue(type(str2) == list)
         self.assertTrue(str2 == [])
