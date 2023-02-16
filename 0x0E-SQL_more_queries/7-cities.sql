@@ -1,6 +1,6 @@
 -- Create database hbtn_0d_usa
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
---Create table name 'cities' in 'hbtn_0d_usa' database
+-- Create table name 'cities' in 'hbtn_0d_usa' database
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (
 	id INT NOT NULL UNIQUE AUTO_INCREMENT PRIMARY KEY,
 	state_id INT NOT NULL,
